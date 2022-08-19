@@ -1,5 +1,5 @@
 // IMPORT HANDLER
-import startHandler from '../handlers/startHandler.js';
+import startHandler from "../handlers/startHandler.js";
 
 // DOM ELEMENTS
 const  startButton = document.getElementById("start");

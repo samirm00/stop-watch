@@ -1,5 +1,5 @@
 // IMPORT 
-import data from '../data.js';
+import data from "../data.js";
 import getWatchTime from "../logic/time.js";
 import getTimeComponent from "../components/time.js";
 
@@ -18,7 +18,7 @@ function startHandler()
         var time = getWatchTime();
         var timeComponent = getTimeComponent(time);
 
-        timeElement.innerHTML = '';
+        timeElement.innerHTML = "";
         timeElement.append(timeComponent);
     }, 10);
       

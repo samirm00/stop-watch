@@ -1,5 +1,5 @@
 // IMPORT HANDLER
-import stopHandler from '../handlers/stopHandler.js';
+import stopHandler from "../handlers/stopHandler.js";
 
 // DOM ELEMENTS
 const  stopButton = document.getElementById("stop");

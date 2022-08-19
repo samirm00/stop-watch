@@ -1,5 +1,5 @@
 // IMPORT 
-import data from '../data.js';
+import data from "../data.js";
 
 function stopHandler() 
 {
