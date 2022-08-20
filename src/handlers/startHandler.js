@@ -20,7 +20,7 @@ function startHandler()
 
         timeElement.innerHTML = "";
         timeElement.append(timeComponent);
-    }, 10);
+    }, 2);
       
 }
 

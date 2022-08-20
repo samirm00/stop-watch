@@ -15,7 +15,7 @@ function getTimeComponent()
     seconds.innerText = (data.seconds) < 10 ? "0" + data.seconds +  " : " : data.seconds + " : ";
 
     const milliseconds = document.createElement("span");
-    milliseconds.className = "milliseconds";
+    milliseconds.className = "milliseconds";    
     milliseconds.innerText = (data.milliseconds) < 10 ? "00" + data.milliseconds: (data.milliseconds < 100 ? "0" + data.milliseconds: data.milliseconds);
 
     time.append(minutes, seconds, milliseconds);

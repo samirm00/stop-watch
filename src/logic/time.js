@@ -3,7 +3,7 @@ import data from '../data.js';
 
 function getWatchTime()
 {
-    data.milliseconds += 10;
+    data.milliseconds += 2;
     if (data.milliseconds === 1000)
     {
         data.milliseconds = 0;
