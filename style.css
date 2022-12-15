@@ -41,3 +41,22 @@ body
     -webkit-appearance: none;
 }
 
+.time
+{
+    width: 525px;
+}
+
+.minutes
+{
+    width: 100px;
+}
+
+.seconds
+{
+    width: 100px;
+}
+
+.milliseconds
+{
+    width: 100px;
+}
