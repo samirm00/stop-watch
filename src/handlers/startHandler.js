@@ -1,27 +1,20 @@
-// IMPORT 
-import data from "../data.js";
-import getWatchTime from "../logic/time.js";
-import getTimeComponent from "../components/time.js";
-
-// DOM ELEMENTS
-const timeElement = document.getElementById("time");
-
-function startHandler() 
-{
-    if( data.watchInterval !== null)
-    {
-        data.watchInterval = clearInterval(data.watchInterval);
+import { data } from '../data.js';
+import updateTime from '../utils/updateTime.js';
+import updateTimeComponent from '../components/updateTimeUnits.js';
+/**
+ * Starts the timer by setting up an interval to update the time components in the DOM.
+ * If there is an existing interval, it is cleared before starting a new one.
+ */
+const startHandler = () => {
+    if (data.intervalId !== null) {
+        clearInterval(data.intervalId);
+        data.intervalId = null;
     }
-    
-    data.watchInterval = setInterval(function()
-    {
-        var time = getWatchTime();
-        var timeComponent = getTimeComponent(time);
 
-        timeElement.innerHTML = "";
-        timeElement.append(timeComponent);
+    data.intervalId = setInterval(() => {
+        const time = updateTime();
+        updateTimeComponent(time);
     }, 10);
-      
-}
+};
 
 export default startHandler;
