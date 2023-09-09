@@ -4,14 +4,14 @@
 
 ## Table of contents
 
--   [General info](#general-info)
--   [Screenshots](#screenshots)
--   [Technologies](#technologies)
--   [Setup](#setup)
--   [Features](#features)
--   [Status](#status)
--   [Inspiration](#inspiration)
--   [Contact](#contact)
+- [General info](#general-info)
+- [Screenshots](#screenshots)
+- [Technologies](#technologies)
+- [Setup](#setup)
+- [Features](#features)
+- [Status](#status)
+- [Inspiration](#inspiration)
+- [Contact](#contact)
 
 ## General info
 
@@ -23,10 +23,10 @@ the objective of this project is to practice separation of concerns and use `set
 
 ## Technologies
 
--   JavaScript
--   HTML5
--   CSS3
--   VSC code
+- JavaScript
+- HTML5
+- CSS3
+- VSC code
 
 ## Setup
 
@@ -37,20 +37,20 @@ clone the repo and start using the stop watch.
 ```js
 'use strict';
 
-import { data } from '../data.js';
+import data from '../data.js';
 import updateTime from '../utils/updateTime.js';
 import updateTimeComponent from '../components/updateTimeUnits.js';
 
 const startHandler = () => {
-    if (data.intervalId !== null) {
-        clearInterval(data.intervalId);
-        data.intervalId = null;
-    }
+  if (data.intervalId !== null) {
+    clearInterval(data.intervalId);
+    data.intervalId = null;
+  }
 
-    data.intervalId = setInterval(() => {
-        const time = updateTime();
-        updateTimeComponent(time);
-    }, 10);
+  data.intervalId = setInterval(() => {
+    const time = updateTime();
+    updateTimeComponent(time);
+  }, 10);
 };
 
 export default startHandler;

@@ -1,12 +1,10 @@
-import { data } from '../data.js';
-
 /**
  * Updates the time object by incrementing the milliseconds and adjusting the seconds and
  * minutes accordingly.
  *
  * @returns {Object} The updated time object.
  */
-const updateTime = () => {
+const updateTime = (data) => {
     data.milliseconds += 10;
     if (data.milliseconds === 1000) {
         data.milliseconds = 0;

@@ -1,4 +1,8 @@
-import { dom } from '../data.js';
+import dom from '../dom.js';
 import startHandler from '../handlers/startHandler.js';
 
-dom.startButton.addEventListener('click', startHandler);
+const startListener = () => {
+    dom.startButton.addEventListener('click', startHandler);
+};
+
+export default startListener;

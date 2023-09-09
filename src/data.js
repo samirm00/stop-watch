@@ -5,11 +5,7 @@ export const data = {
     intervalId: null,
     oldMinutes: 0,
     oldSeconds: 0,
-    oldMilliseconds: 0,
+    oldMilliseconds: 0
 };
 
-export const dom = {
-    startButton: document.getElementById('start'),
-    stopButton: document.getElementById('stop'),
-    resetButton: document.getElementById('reset'),
-};
+export default data;

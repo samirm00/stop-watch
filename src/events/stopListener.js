@@ -1,4 +1,8 @@
-import { dom } from '../data.js';
+import dom from '../dom.js';
 import stopHandler from '../handlers/stopHandler.js';
 
-dom.stopButton.addEventListener('click', stopHandler);
+const stopListener = () => {
+    dom.stopButton.addEventListener('click', stopHandler);
+};
+
+export default stopListener;

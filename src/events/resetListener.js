@@ -1,4 +1,8 @@
-import { dom } from '../data.js';
+import dom from '../dom.js';
 import resetHandler from '../handlers/resetHandler.js';
 
-dom.resetButton.addEventListener('click', resetHandler);
+const resetListener = () => {
+    dom.resetButton.addEventListener('click', resetHandler);
+};
+
+export default resetListener;

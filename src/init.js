@@ -1,3 +1,7 @@
-import './events/startListener.js';
-import './events/stopListener.js';
-import './events/resetListener.js';
+import startListener from './events/startListener.js';
+import resetListener from './events/resetListener.js';
+import stopListener from './events/stopListener.js';
+
+startListener();
+resetListener();
+stopListener();
