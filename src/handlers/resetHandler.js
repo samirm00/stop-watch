@@ -1,4 +1,5 @@
 import data from '../data.js';
+import dom from '../dom.js';
 import updateTimeComponent from '../components/updateTimeUnits.js';
 
 /**
@@ -12,7 +13,7 @@ const resetHandler = () => {
     data.minutes = 0;
     data.seconds = 0;
     data.milliseconds = 0;
-    updateTimeComponent(data);
+    updateTimeComponent(dom.time, data);
 };
 
 export default resetHandler;

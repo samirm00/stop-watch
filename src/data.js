@@ -4,8 +4,7 @@ export const data = {
     milliseconds: 0,
     intervalId: null,
     oldMinutes: 0,
-    oldSeconds: 0,
-    oldMilliseconds: 0
+    oldSeconds: 0
 };
 
 export default data;

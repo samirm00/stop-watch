@@ -1,4 +1,5 @@
 import data from '../data.js';
+import dom from '../dom.js';
 import updateTime from '../utils/updateTime.js';
 import updateTimeComponent from '../components/updateTimeUnits.js';
 /**
@@ -13,7 +14,7 @@ const startHandler = () => {
 
     data.intervalId = setInterval(() => {
         const time = updateTime(data);
-        updateTimeComponent(time);
+        updateTimeComponent(dom.time, time);
     }, 10);
 };
 
